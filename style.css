@@ -249,6 +249,40 @@ header {
   font-size: 1.25rem;
 }
 
+/* Sponsors Section */
+
+.sponsors-section {
+  width: 75%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.sponsor-text {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.sponsor-text h1 {
+  margin-bottom: 1rem;
+}
+
+.sponsor-text p {
+  margin-bottom: 4rem;
+}
+
+.sponsor-logos {
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 4rem;
+}
+
+.sponsor-logo {
+  filter: grayscale(100%);
+  transform: scale(90%);
+}
+
 /* Footer CSS */
 
 footer {
