@@ -450,7 +450,7 @@ footer p {
   /* Facts Section */
 
   .facts-section {
-    margin: 85px 0;
+    margin: 85px auto;
   }
 
   .facts-text {
@@ -464,7 +464,6 @@ footer p {
   }
 
   .fact-cards-container {
-    width: 90%;
     margin: 3rem auto;
     flex-direction: column;
     gap: 2.5rem;
@@ -474,6 +473,46 @@ footer p {
 
   .fact-card {
     width: 100%;
+  }
+
+  /* Sponsors Section */
+
+  .sponsors-section {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .sponsor-text {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .sponsor-text h1 {
+    margin-bottom: 1rem;
+  }
+
+  .sponsor-text p {
+    margin-bottom: 4rem;
+  }
+
+  .sponsor-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  .sponsor-logo {
+    filter: grayscale(100%);
+    transform: scale(90%);
+  }
+
+  .sponsor-logo:last-child {
+    grid-column: span 2;
   }
 
   /* Footer CSS */
