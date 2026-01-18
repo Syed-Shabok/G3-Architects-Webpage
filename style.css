@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Shared Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.color-dark1 {
+  color: #131313;
+}
+
+.color-dark2 {
+  color: #424242;
+}
+
+.color-dark3 {
+  color: #727272;
+}
+
+.title-font {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #ff900e;
+  color: #ffffff;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Header Styles */
+
+header {
+  background-color: rgba(255, 144, 14, 0.1);
+  padding: 0.1px;
+}
+
+/* Navbar CSS */
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  max-width: 1440px;
+  margin: 30px auto 80px;
+}
+
+.nav-links {
+  list-style: none;
+  gap: 1.88rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+/* Banner CSS */
+
+.banner-content {
+  width: 55%;
+  max-width: 862px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-weight: bold;
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.banner-content p {
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.banner-img {
+  width: 75%;
+  max-width: 1440px;
+  margin: 50px auto;
+}
+
+.banner-img img {
+  width: 100%;
+}
+
+/* Teams Section CSS */
+
+.teams-text-1 {
+  font-weight: 500;
+  color: #727272;
+}
+
+.teams-text-2 {
+  font-weight: bold;
+  color: #ff900e;
+}
+
+.teams-section {
+  gap: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 85px auto;
+}
+
+.team-imgs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
+  width: 35%;
+  max-width: 700px;
+}
+
+.team-imgs img {
+  width: 100%;
+}
+
+.teams-content {
+  width: 40%;
+  max-width: 537px;
+}
+
+.teams-content h1 {
+  margin-bottom: 24px;
+}
+
+.teams-content p {
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
+/* Feature Section CSS */
+
+.features-section {
+  width: 75%;
+  max-width: 1440px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.feature-content {
+  width: 55%;
+}
+
+.feature-content h1 {
+  width: 80%;
+  padding-left: 15px;
+  border-left: 5px solid #ff900e;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.features-cards-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-card {
+  padding: 30px;
+  box-shadow: 0 4px 30px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 0.5rem;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.feature-img {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-img img {
+  width: 100%;
+}
+
+#experience-badge {
+  padding: 35px;
+  margin-top: -70px;
+  margin-left: -340px;
+}
+
+#experience-year {
+  font-size: 2.5rem;
+}
+
+/* Facts Section */
+
+.facts-section {
+  margin: 85px 0;
+}
+
+.facts-text {
+  width: 75%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.facts-text p {
+  margin-top: 24px;
+  max-width: 542px;
+}
+
+.fact-cards-container {
+  width: 75%;
+  max-width: 1440px;
+  margin: 85px auto;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.fact-card {
+  border: 2px solid #ff900e;
+  border-radius: 0.5rem;
+  width: 240px;
+  text-align: center;
+  padding: 45px 35px 60px;
+}
+
+.fact-card p {
+  font-size: 1.25rem;
+}
+
+/* Footer CSS */
+
+footer {
+  padding: 50px 0px 30px;
+  background-color: rgba(255, 144, 14, 0.1);
+  width: 75%;
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .btn-primary {
+    transform: scale(75%);
+  }
+
+  /* Navbar CSS */
+  .navbar {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 30px auto 60px;
+  }
+
+  .navbar h1 {
+    font-size: 2.8rem;
+  }
+
+  .nav-links {
+    list-style: none;
+    gap: 1.5rem;
+    margin-top: 0.8rem;
+  }
+
+  /* Banner CSS */
+
+  .banner-content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .banner-content h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .banner-content p {
+    line-height: 1rem;
+    line-height: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .banner-img {
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  /* Teams Section CSS */
+
+  .teams-section {
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem auto 1.5rem;
+  }
+
+  .teams-text-1 {
+    font-weight: 500;
+    color: #727272;
+  }
+
+  .teams-text-2 {
+    font-weight: bold;
+    color: #ff900e;
+  }
+
+  .team-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.5rem;
+    width: 90%;
+  }
+
+  .team-imgs img {
+    width: 100%;
+  }
+
+  .teams-content {
+    width: 90%;
+    text-align: center;
+  }
+
+  .teams-content h1 {
+    margin-bottom: 1.2rem;
+  }
+
+  .teams-content p {
+    margin-bottom: 1.2rem;
+  }
+
+  /* Feature Section CSS */
+
+  .features-section {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .feature-content {
+    width: 100%;
+  }
+
+  .feature-content h1 {
+    width: 100%;
+    padding-left: 1rem;
+    border-left: 5px solid #ff900e;
+    margin-bottom: 1.8rem;
+  }
+
+  .features-cards-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feature-card {
+    padding: 30px;
+    box-shadow: 0 4px 30px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 0.5rem;
+  }
+
+  .feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+
+  .feature-img {
+    width: 100%;
+    position: relative;
+  }
+
+  #experience-badge {
+    transform: scale(55%);
+    margin-top: 0px;
+    margin-left: 0px;
+    position: absolute;
+    top: -5px;
+    left: -25px;
+    box-shadow: 0 1px 15px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Facts Section */
+
+  .facts-section {
+    margin: 85px 0;
+  }
+
+  .facts-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .facts-text p {
+    margin-top: 1rem;
+  }
+
+  .fact-cards-container {
+    width: 90%;
+    margin: 3rem auto;
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fact-card {
+    width: 100%;
+  }
+
+  /* Footer CSS */
+
+  footer {
+    padding: 30px 0px 20px;
+    background-color: rgba(255, 144, 14, 0.1);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
